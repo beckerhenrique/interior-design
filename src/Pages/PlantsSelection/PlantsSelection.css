@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+
+.plantSelectionPage{
+   min-height: 200vh;
+   background-color: #ffcb9a;
+}
+.plantIcon1, .plantIcon2{
+   width: 100px;
+   position: fixed;
+   right: 3%;
+   top: 45%;
+}
+.plantSelectionPage h1{
+   text-align: center;
+   padding: 2rem;
+   font-family: 'Noto Sans Mono', monospace;
+}
+.plantsSection{
+   width: 85%;
+   margin-left: 2rem;
+   padding-bottom: 2rem; 
+}
+.plantsPics{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1rem;
+   justify-content: space-evenly;
+}
+.plantsPics .cardServices img{
+   width: 200px;
+   min-height: 150px;
+   max-height: 150px;
+}
+.plantsPics .cardServices{
+   width: 230px;
+   height: 250px;
+   background-color: #ffffe0;
+   gap: 0;
+   cursor: default;
+   text-align: center;
+}
+.plantsPics .cardServices h1{
+   font-size: 15px;
+   margin-inline: auto;
+}
+.treesSection{
+   width: 85%;
+   margin-left: 2rem;
+   padding-bottom: 2rem; 
+}
+.treesPics{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1rem;
+   
+   justify-content: space-evenly;
+}
+.treesPics .cardServices img{
+   width: 200px;
+   min-height: 150px;
+   max-height: 150px;
+}
+.treesPics .cardServices{
+   width: 230px;
+   height: 250px;
+   background-color: #ffffe0;
+   gap: 0;
+   cursor: default;
+   text-align: center;
+}
+.treesPics .cardServices h1{
+   font-size: 15px;
+   margin-inline: auto;
+}
+@media(max-width: 800px){
+   .treesPics{
+      flex-direction: column;
+      align-items: center;
+   }
+   .plantsPics{
+      flex-direction: column;
+      align-items: center;
+   }
+}
+@media(max-width: 515px){
+   .treesPics{
+      flex-direction: column;
+      align-items: start;
+      padding-left: 1rem;
+   }
+   .plantsPics{
+      flex-direction: column;
+      align-items: start;
+      padding-left: 1rem;
+   }
+}
+@media(max-width: 420px){
+   .plantIcon1, .plantIcon2{
+      display: none;
+   }
+   .treesPics{
+      padding-left: 0;
+      align-items: center;
+   }
+   .plantsPics{
+      padding-left: 0;
+      align-items: center;
+   }
+}

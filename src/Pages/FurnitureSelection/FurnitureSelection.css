@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap");
+
+.furnitureSelectionPage{
+   font-family: "Noto Sans Mono", monospace;
+   min-height: 90vh;
+   padding: 1rem;
+   background-color: #ffcb9a;
+   text-align: center;
+}
+.titleFurniturePage{
+   padding: 2rem;
+   font-size: 40px;
+}
+.furniturePics{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1rem;
+   justify-content: center;
+}
+.furniturePics .cardServices{
+   height: 400px;
+   cursor: default;
+}
+@media (max-width: 376px) {
+   .furniturePics .cardServices img{
+      width: 280px;
+      height: 200px;
+   }
+   .furniturePics .cardServices{
+      width: 300px;
+      height: 350px;
+   }
+}
+@media (max-width: 321px) {
+   .furniturePics .cardServices img{
+      width: 250px;
+   }
+   .furniturePics .cardServices{
+      width: 280px;
+   }
+}

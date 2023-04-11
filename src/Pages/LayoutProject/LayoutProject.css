@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+
+.layoutPage{
+   min-height: 80vh;
+   background-color: #ffcb9a;
+   padding-bottom: 1rem;
+}
+.titleLayout{
+   font-family: 'Noto Sans Mono', monospace;
+   text-align: center;
+   padding: 2rem;
+}
+.titleLayout h1{
+   font-size: 30px;
+}
+.layoutPage h2{
+   padding-inline: 3rem;
+   padding-bottom: 2rem;
+   font-size: 28px;
+}
+.projectsLayout{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1rem;
+   justify-content: space-evenly;
+   padding: 1rem;
+   font-family: 'Noto Sans Mono', monospace;
+   
+   margin-inline: 1rem;
+}
+.projectsLayout h1{
+   font-size: 24px;
+}
+.projectsLayout p{
+   font-size: 18px;
+}
+.projectsLayout .cardServices{
+   gap: 2rem;
+   cursor: default;
+}
+@media(max-width: 440px){
+   .projectsLayout .cardServices{
+      width: 280px;
+   }
+   .projectsLayout .cardServices img{
+      width: 270px;
+      height: 200px;
+   }
+}

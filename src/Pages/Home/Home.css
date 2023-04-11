@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap");
+
+.homePage {
+  font-family: "Noto Sans Mono", monospace;
+}
+.mainContent {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+.mainContent h1 {
+  font-size: 60px;
+  width: 60%;
+  z-index: 1000;
+  padding-top: 8%;
+}
+.mainContent p {
+  font-size: 26px;
+  width: 45%;
+  z-index: 1000;
+}
+.imgMainContent {
+  height: 100vh;
+  filter: saturate(300%);
+}
+.ourWork {
+  padding: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #ffcb9a;
+}
+.ourWork h1 {
+  font-size: 45px;
+  padding-bottom: 2rem;
+}
+.imgsOurWork {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.imgsOurWork img {
+  border-radius: 10px;
+}
+.imgWorkSmall {
+  width: 390px;
+}
+.imgWorkBig {
+  width: 600px;
+}
+.aboutUs {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffffe0;
+}
+.aboutUs p {
+  width: 75%;
+  font-size: 20px;
+}
+.aboutUs h2 {
+  font-size: 28px;
+}
+.ourServices {
+  background-color: #ffffe0;
+  padding: 2rem;
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+.h1OurServices {
+  font-size: 45px;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.cardsServicesContainer {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.comments {
+  padding: 2rem;
+  height: 80vh;
+  background-color: #f3f4f6;
+}
+.carousel {
+  height: 90%;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.slick-list {
+  width: 100%;
+  height: 100%;
+}
+.imgComments {
+  margin: 2rem auto;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.commentsComments {
+  margin: auto;
+  font-size: 27px;
+}
+.commentOwner {
+  margin-top: 2rem;
+  font-size: 27px;
+}
+.contactForm {
+  background-color: #f3f4f6;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 70vh;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+}
+.contactForm input {
+  margin-bottom: 1rem;
+  background-color: #dbdcdd;
+  opacity: 1;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  margin-right: 1rem;
+  min-width: 300px;
+}
+.contactForm button {
+  width: 90px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  background-color: #372727;
+  color: #ffffe0;
+}
+.contactInputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.normalInput {
+  width: 200px;
+  height: 35px;
+}
+.messageInput {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 100px;
+}
+.contactInfos {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (max-width: 1025px) {
+  .mainContent h1 {
+    font-size: 40px;
+  }
+  .mainContent p {
+    font-size: 23px;
+  }
+  .imgsOurWork {
+    justify-content: center;
+  }
+  .imgsOurWork img {
+    width: 390px;
+  }
+  .aboutUs {
+    padding: 2rem;
+  }
+  .aboutUs p {
+    font-size: 19px;
+  }
+  .cardsServicesContainer {
+    justify-content: center;
+  }
+}
+@media (max-width: 769px) {
+  .mainContent p {
+    width: 80%;
+  }
+}
+@media (max-width: 426px) {
+  .contactInputs {
+    grid-template-areas:
+      "labelName"
+      "nameInput"
+      "labelEmail"
+      "emailInput"
+      "labelMessage"
+      "messageInput"
+      "sendBtn";
+  }
+  .labelName {
+    grid-area: labelName;
+  }
+  .labelEmail {
+    grid-area: labelEmail;
+  }
+  .nameInput {
+    grid-area: nameInput;
+  }
+  .emailInput {
+    grid-area: emailInput;
+  }
+  .labelMessage {
+    grid-area: labelMessage;
+  }
+  .messageInput {
+    grid-area: messageInput;
+  }
+  .sendBtn {
+    grid-area: sendBtn;
+    margin-bottom: 1rem;
+  }
+  .aboutUs p {
+    width: 90%;
+  }
+  .mainContent h1 {
+    font-size: 35px;
+    width: 80%;
+  }
+  .mainContent p {
+    font-size: 20px;
+  }
+  .commentsComments {
+    font-size: 15px;
+  }
+}
+@media (max-width: 376px) {
+  .imgsOurWork img {
+    width: 300px;
+  }
+  .cardsServicesContainer .cardServices img {
+    width: 270px;
+    height: 200px;
+  }
+  .cardsServicesContainer .cardServices {
+    width: 280px;
+  }
+}
+@media (max-width: 321px) {
+  .mainContent p {
+    font-size: 18px;
+  }
+  .contactInputs{
+    padding-left: 1rem;
+  }
+}

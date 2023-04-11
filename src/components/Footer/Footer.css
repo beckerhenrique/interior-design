@@ -1,0 +1,23 @@
+.footer{
+   background-color: #2b0909;
+   height: 4rem;
+   padding-left: 2rem;
+   padding-right: 2rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.footer h2{
+   background-image: linear-gradient(45deg, #ffce76, #689060);
+   background-size: 100%;
+   background-repeat: repeat;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -moz-background-clip: text;
+   -moz-text-decoration-color: transparent;
+}
+.githubIcon{
+   font-size: 30px;
+   color: #689060;
+  
+}
